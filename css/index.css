@@ -15,6 +15,10 @@ button {
 	border: none;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 header {
 	width: 100%;
 }
@@ -409,5 +413,81 @@ header nav .sidebar-button span {
 	100% {
 		-webkit-opacity: 1;
 		opacity: 1;
+	}
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+	.custom-container {
+		margin: 10px auto;
+	}
+
+	.icon {
+		font-size: 20px;
+	}
+
+	.ball {
+		width: 25px;
+		height: 25px;
+		margin: 3px;
+	}
+
+	.dark .ball {
+		transform: translateX(28px);
+	}
+
+	.toggle {
+		width: 60px;
+		height: 30px;
+	}
+
+	.main__header__text h1 {
+		font-size: 40px;
+	}
+
+	.main__header__text p {
+		font-size: 10px;
+	}
+
+	.main__content__carousel {
+		min-width: 1200px;
+	}
+
+	.main__content__carousel .card {
+		width: 180px;
+		height: 280px;
+		transform: translateX(-330px) scale(.9);
+	}
+
+	.main__content__carousel .card .card-image {
+		height: 250px;
+		display: flex;
+		align-items: center;
+	}
+
+	.main__content__carousel .card .card-body {
+		height: 90px;
+	}
+
+	.main__content__carousel .slick-current {
+		transform: translateX(-330px) scale(1);
+	}
+
+	.main__content__carousel .slick-current .card-body h1 {
+		font-size: 14px;
+	}
+
+	.main__content__carousel .slick-arrow {
+		top: 150px;
+	}
+
+	.main__content__carousel .slick-next {
+		right: 25px;
+	}
+
+	.main__content__carousel .slick-arrow svg {
+		width: 30px;
+		height: 30px;
 	}
 }
