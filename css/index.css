@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;700&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+header {
+    width: 100%;
+}
+header nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+header nav .logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .logo img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+header nav .nav-links {
+    flex: 1;
+}
+header nav .nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+header nav .nav-links li a {
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+header nav .search-form {
+    flex: 2;
+}
+header nav .search-form .input-group {
+    border-bottom: 1px solid #adadad;
+    width: 100%;
+    display: flex;
+}
+header nav .search-form .input-group input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+}
+header nav .search-form .input-group input:focus {
+    outline: none;
+}
+header nav .search-form .input-group button {
+    width: 20px;
+}
+header nav .search-form .input-group button img {
+    width: 100%;
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    text-transform: uppercase;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    text-transform: uppercase;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    text-transform: uppercase;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    text-transform: uppercase;
+}
+header nav .sidebar-button {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .sidebar-button span {
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+.circle-bg {
+    height: 700px;
+    width: 700px;
+    background-color: #e5f4ef;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -150px;
+    right: 25%;
+}
+.custom-container{
+    width: 80%;
+    margin: 20px auto;
+}
+/* darkmode */
+
+.toggle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .checkbox {
+    display: none;
+  }
+  .icon {
+    width: 50%;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    z-index: 1;
+  }
+  .ball {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 7px;
+    transition: 0.2s;
+  }
+  /* ---- ---- Light Mode ---- ---- */
+  .light {
+    background-color: #fafafa;
+  }
+  .light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #fff;
+  }
+  .light .icon--light {
+    color: #fafafa;
+  }
+  .light .icon--dark {
+    color: #252525;
+  }
+  .light .ball {
+    background-color: #252525;
+  }
+  .light header nav .nav-links li a,
+  .light header nav .sidebar-button span,
+  .light .main__header__text p {
+      color: #000;
+  }
+  .light .circle-bg {
+      background-color: #e5f4ef;
+  }
+  /* ---- ---- Dark Mode ---- ---- */
+  .dark {
+    background-color: #252525;
+  }
+  .dark .toggle {
+    background: #252525;
+    box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #3A3B3C;
+  }
+  .dark .icon--light {
+    color: #fafafa;
+  }
+  .dark .icon--dark {
+    color: #0e131b;
+  }
+  .dark .ball {
+    background-color: #fafafa;
+    transition: 0.3s;
+    transform: translateX(60px);
+  }
+  .dark header nav .nav-links li a,
+  .dark header nav .sidebar-button span,
+  .dark .main__header__text p {
+    color: #fff;
+  }
+  .dark .circle-bg {
+      background-color: #3A3B3C;
+  }
+  .dark .main__header__text h1{
+    color: #aaaaaa;
+  }
+/* main */
+.main{
+    position: relative;
+}
+.main__header{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.main__header__rewards{
+    max-width: 200px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.main__header__rewards img{
+    width: 100%;
+}
+.main__header__text{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.main__header__text h1{
+    text-align: right;
+    font-size: 70px;
+    color: #036635;
+    font-weight: bold;
+}
+.main__header__text p{
+    text-align: right;
+    max-width: 500px;
+}
+.main__content{
+    padding-top: 20px;
+}
+.main__content__carousel .card{
+    margin-top: 80px;
+    width: 300px;
+    height: 400px;
+    background-color: #c0c0c0;
+    transform: translateX(-250px) scale(.9);
+    border-radius: 20px;
+}
+.main__content__carousel .card .card-image{
+    width: 100%;
+    height: 350px;
+    z-index: 1000;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-80px);
+    transform: translateX(-50%) translateY(-80px);
+}
+.main__content__carousel .card .card-image img{
+    width: 100%;
+}
+.main__content__carousel .card .card-body {
+    transform: translateY(-80px);
+    height: 90px;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    padding:20px;
+}
+.main__content__carousel .card .card-body h1{
+    font-weight: 100;
+}
+.main__content__carousel .slick-current .card-image{
+    background: rgb(3,102,53);
+    background: linear-gradient(0deg, rgba(3,102,53,1) 0%, rgba(19,19,18,0) 60%);
+}
+.main__content__carousel .slick-current{
+    background-color: #036635;
+    background-image: url(../img/card-bg.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 350px;
+    transform: translateX(-250px) scale(1);
+}
+.main__content__carousel .slick-current .card-body{
+    background-color: #036635;
+}
+.main__content__carousel .slick-current .card-body h1{
+    color: #fff;
+    font-weight: bold;
+}
