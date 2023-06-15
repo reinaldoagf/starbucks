@@ -15,7 +15,7 @@ button {
 	border: none;
 }
 
-body {
+html,body {
 	overflow-x: hidden;
 }
 
@@ -135,9 +135,13 @@ header nav .sidebar-button span {
 }
 
 .custom-container {
-	width: 80%;
-	margin: 20px auto;
+    margin: 20px auto;
+    max-width: 1242px;    
 }
+.custom-container--xl {
+    max-width: 1242px;
+}
+
 
 /* darkmode */
 
@@ -287,7 +291,7 @@ header nav .sidebar-button span {
 }
 
 .main__content {
-	padding-top: 20px;
+    margin: 0 auto;
 }
 
 .main__content__carousel {
@@ -299,7 +303,7 @@ header nav .sidebar-button span {
 	width: 300px;
 	height: 400px;
 	background-color: #c0c0c0;
-	transform: translateX(-320px) scale(.9);
+	transform: translateX(-350px) scale(.9);
 	border-radius: 20px;
 }
 
@@ -320,7 +324,7 @@ header nav .sidebar-button span {
 .main__content__carousel .card .card-body {
 	transform: translateY(-80px);
 	height: 110px;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 20px 20px;
 	position: relative;
 	padding: 10px 20px;
 	display: flex;
@@ -359,7 +363,7 @@ header nav .sidebar-button span {
 	background-attachment: fixed;
 	background-position: top;
 	background-size: 350px;
-	transform: translateX(-320px) scale(1);
+	transform: translateX(-350px) scale(1);
 	transition: all 1s ease-in-out;
 }
 
@@ -420,9 +424,12 @@ header nav .sidebar-button span {
 
 @media only screen and (max-width: 1300px) and (min-width: 1000px) {
 	.custom-container {
-		margin: 10px auto;
+        margin: 10px auto;
+        max-width: 1142px;
 	}
-
+    .custom-container--xl {
+        max-width: 1160px;
+	}
 	.icon {
 		font-size: 20px;
 	}
@@ -457,7 +464,7 @@ header nav .sidebar-button span {
 	.main__content__carousel .card {
 		width: 180px;
 		height: 280px;
-		transform: translateX(-330px) scale(.9);
+		transform: translateX(-335px) scale(.9);
 	}
 
 	.main__content__carousel .card .card-image {
@@ -471,7 +478,7 @@ header nav .sidebar-button span {
 	}
 
 	.main__content__carousel .slick-current {
-		transform: translateX(-330px) scale(1);
+		transform: translateX(-335px) scale(1);
 	}
 
 	.main__content__carousel .slick-current .card-body h1 {
@@ -491,3 +498,23 @@ header nav .sidebar-button span {
 		height: 30px;
 	}
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main__content__carousel .card {
+        transform: scale(.9);
+    }
+    .main__content__carousel .slick-current {
+		transform: scale(1);
+	}
+    .main__content__carousel {
+        min-width: 410px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
