@@ -77,5 +77,6 @@ $(document).ready(function() {
     toggle.addEventListener('change', () => {
       body.classList.toggle('dark');
       document.querySelector('#rewards').src = body.classList.contains('dark') ? "./img/rewards-white.png" : "./img/rewards.png"
+      document.querySelector('#rewards').srcset = body.classList.contains('dark') ? "./img/rewards-white-600.png 600w, ./img/rewards-white-900.png 900w, ./img/rewards-white-1200.png 1200w" : "./img/rewards-600.png 600w, ./img/rewards-900.png 900w, ./img/rewards-1200.png 1200w"
     });
   });

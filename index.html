@@ -44,7 +44,11 @@
          <main class="main" id="main">
             <section class="custom-container main__header">
                <div class="main__header__rewards">
-                  <img src="./img/rewards.png" alt="rewards" id="rewards">
+                  <img 
+                     src="./img/rewards.png"
+                     srcset="./img/rewards-600.png 600w, ./img/rewards-900.png 900w, ./img/rewards-1200.png 1200w"                              
+                     alt="rewards" 
+                     id="rewards">
                </div>
                <div class="main__header__text">
                   <h1>The happiest hour <br>of th year</h1>
@@ -55,7 +59,11 @@
                <div class="main__content__carousel" id="main__content__carousel">
                   <div class="card">
                      <div class="card-image">
-                        <img src="./img/product1.png" alt="product1">
+                        <!-- sizes=(max-width:480px) 300px, (max-width:600px) 480px-->
+                        <img
+                           src="./img/product1-1200.png"
+                           srcset="./img/product1-600.png 600w, ./img/product1-600.png 600w, ./img/product1-1200.png 1200w"
+                           alt="product1" >
                         <div class="slick-arrow slick-prev slick-arrow-animated">
                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z" fill="#c0c0c0"/>
@@ -74,7 +82,10 @@
                   </div>
                   <div class="card">
                      <div class="card-image">
-                        <img src="./img/product2.png" alt="product2">
+                        <img 
+                           src="./img/product2-1200.png" 
+                           srcset="./img/product2-600.png 600w, ./img/product2-900.png 900w, ./img/product2-1200.png 1200w"
+                           alt="product2">
                         <div class="slick-arrow slick-prev slick-arrow-animated">
                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z" fill="#c0c0c0"/>
@@ -93,7 +104,10 @@
                   </div>
                   <div class="card">
                      <div class="card-image">
-                        <img src="./img/product3.png" alt="product3">
+                        <img 
+                           src="./img/product3-1200.png" 
+                           srcset="./img/product3-600.png 600w, ./img/product3-900.png 900w, ./img/product3-1200.png 1200w"
+                           alt="product3">
                         <div class="slick-arrow slick-prev slick-arrow-animated">
                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z" fill="#c0c0c0"/>
@@ -112,7 +126,10 @@
                   </div>
                   <div class="card">
                      <div class="card-image">
-                        <img src="./img/product4.png" alt="product4">
+                        <img 
+                           src="./img/product4-1200.png" 
+                           srcset="./img/product4-600.png 600w, ./img/product4-900.png 900w, ./img/product4-1200.png 1200w"
+                           alt="product4">
                         <div class="slick-arrow slick-prev slick-arrow-animated">
                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z" fill="#c0c0c0"/>
@@ -131,7 +148,10 @@
                   </div>
                   <div class="card">
                      <div class="card-image">
-                        <img src="./img/product5.png" alt="product5">
+                        <img 
+                           src="./img/product5-1200.png" 
+                           srcset="./img/product5-600.png 600w, ./img/product5-900.png 900w, ./img/product5-1200.png 1200w"
+                           alt="product5">
                         <div class="slick-arrow slick-prev slick-arrow-animated">
                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z" fill="#c0c0c0"/>
