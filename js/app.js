@@ -39,7 +39,9 @@ $(document).ready(function() {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: true,
           }
         },
         {
@@ -59,6 +61,15 @@ $(document).ready(function() {
     });
     $('#main__content__carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
       $(".slick-arrow").addClass("slick-arrow-animated");
+    });
+    $("#main__header--mobile").slick({
+            infinite: true,
+            dots: false,
+            arrows: false,
+            variableWidth: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+      
     });
 
     
