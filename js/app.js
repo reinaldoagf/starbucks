@@ -1,20 +1,5 @@
 $(document).ready(function() {
 
-    function toggleSidebar() {
-      $(".button").toggleClass("active");
-      $("#main").toggleClass("move-to-left");
-      $(".sidebar-item").toggleClass("active");
-    }
-  
-    $(".button").on("click tap", function() {
-      toggleSidebar();
-    });
-  
-    $(document).keyup(function(e) {
-      if (e.keyCode === 27) {
-        toggleSidebar();
-      }
-    });
     /* slick slider */
     $("#main__content__carousel").slick({
       slidesToShow: 4,
@@ -81,13 +66,10 @@ $(document).ready(function() {
     })
     
     
-    /* slick slider */
-    const body = document.querySelector('body');
-    const toggle = document.querySelector('#toggle');
-    
-    toggle.addEventListener('change', () => {
-      body.classList.toggle('dark');
-      document.querySelector('#rewards').src = body.classList.contains('dark') ? "./img/rewards-white.png" : "./img/rewards.png"
-      document.querySelector('#rewards').srcset = body.classList.contains('dark') ? "./img/rewards-white-600.png 600w, ./img/rewards-white-900.png 900w, ./img/rewards-white-1200.png 1200w" : "./img/rewards-600.png 600w, ./img/rewards-900.png 900w, ./img/rewards-1200.png 1200w"
+    /* slick slider */    
+    $('#toggle').on('change', function() {
+      $('body').toggleClass('dark');
+      $('#rewards').attr('src', $('body').hasClass('dark') ? './img/rewards-white.png' : './img/rewards.png');
+      $('#rewards').attr('srcset', $('body').hasClass('dark') ? './img/rewards-white-600.png 600w, ./img/rewards-white-900.png 900w, ./img/rewards-white-1200.png 1200w' : './img/rewards-600.png 600w, ./img/rewards-900.png 900w, ./img/rewards-1200.png 1200w');
     });
   });
