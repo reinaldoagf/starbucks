@@ -24,14 +24,14 @@ header {
 	width: 100%;
 }
 
-header nav {
+.header__nav {
 	position: relative;
 	display: flex;
 	align-items: center;
 	z-index: 1;
 }
 
-header nav .logo {
+.header__logo {
 	width: 60px;
 	height: 60px;
 	display: flex;
@@ -39,23 +39,23 @@ header nav .logo {
 	justify-content: center;
 }
 
-header nav .logo img {
+.header__logo img {
 	object-fit: cover;
 	width: 60px;
 	height: 60px;
 }
 
-header nav .nav-links {
+.header__nav-links {
 	flex: 1;
 }
 
-header nav .nav-links li {
+.header__nav-link {
 	list-style: none;
 	display: inline-block;
 	margin: 0 10px;
 }
 
-header nav .nav-links li a {
+.header__nav-link a {
 	transition: all 0.4s ease-in-out;
 	text-decoration: none;
 	color: #000;
@@ -63,31 +63,31 @@ header nav .nav-links li a {
 	border-radius: 5px;
 }
 
-header nav .search-form {
+.header__search-form {
 	flex: 2;
 }
 
-header nav .search-form .input-group {
+.header__input-group {
 	border-bottom: 1px solid #adadad;
 	width: 100%;
 	display: flex;
 }
 
-header nav .search-form .input-group input {
+.header__input {
 	flex: 1;
 	border: none;
 	background-color: transparent;
 }
 
-header nav .search-form .input-group input:focus {
+.header__input:focus {
 	outline: none;
 }
 
-header nav .search-form .input-group button {
+.header__search-button {
 	width: 20px;
 }
 
-header nav .search-form .input-group button img {
+.header__search-button img {
 	width: 100%;
 }
 
@@ -111,13 +111,13 @@ header nav .search-form .input-group button img {
 	text-transform: uppercase;
 }
 
-header nav .theme-button {
+.header__sidebar-button {
 	flex: 2;
 	display: flex;
 	justify-content: flex-end;
 }
 
-header nav .theme-button span {
+.header__basket-text {
 	text-transform: uppercase;
 	align-items: center;
 	display: flex;
@@ -145,7 +145,7 @@ header nav .theme-button span {
 }
 
 /* darkmode */
-header nav .theme-button .toggle {
+.header__toggle-label {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -157,11 +157,11 @@ header nav .theme-button .toggle {
 	transition: 0.2s;
 }
 
-header nav .theme-button .checkbox {
+.header__toggle-checkbox {
 	display: none;
 }
 
-header nav .theme-button .icon {
+.header__icon {
 	width: 50%;
 	font-size: 32px;
 	line-height: 60px;
@@ -169,7 +169,7 @@ header nav .theme-button .icon {
 	z-index: 1;
 }
 
-header nav .theme-button .ball {
+.header__ball {
 	position: absolute;
 	width: 45px;
 	height: 45px;
@@ -183,20 +183,20 @@ header nav .theme-button .ball {
 	background-color: #fafafa;
 }
 
-.light header nav .theme-button  .toggle {
+.light .header__toggle-label {
 	background: linear-gradient(145deg, #e1e1e1, #fff);
 	box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #fff;
 }
 
-.light .icon--light {
+.light .header__icon--light {
 	color: #fafafa;
 }
 
-.light .icon--dark {
+.light .header__icon--dark {
 	color: #252525;
 }
 
-.light .ball {
+.light .header__ball {
 	background-color: #252525;
 }
 
@@ -215,27 +215,27 @@ header nav .theme-button .ball {
 	background-color: #252525;
 }
 
-.dark header nav .theme-button  .toggle {
+.dark .header__toggle-label {
 	background: #252525;
 	box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #3a3b3c;
 }
 
-.dark header nav .theme-button  .icon--light {
+.dark .header__icon--light {
 	color: #fafafa;
 }
 
-.dark header nav .theme-button  .icon--dark {
+.dark .header__icon--dark {
 	color: #0e131b;
 }
 
-.dark header nav .theme-button  .ball {
+.dark .header__ball {
 	background-color: #fafafa;
 	transition: 0.3s;
 	transform: translateX(60px);
 }
 
-.dark header nav .nav-links li a,
-.dark header nav .theme-button span,
+.dark .header__nav-links a,
+.dark .header__sidebar-button span,
 .dark .main__header__text p {
 	color: #fff;
 }
@@ -443,22 +443,21 @@ header nav .theme-button .ball {
 	.custom-container--xl {
 		max-width: 100vw;
 	}
-
-	header nav .theme-button  .icon {
+	.header__icon {
 		font-size: 20px;
 	}
 
-	header nav .theme-button .ball {
+	.header__ball {
 		width: 25px;
 		height: 25px;
 		margin: 3px;
 	}
 
-	.dark header nav .theme-button  .ball {
+	.dark .header__ball {
 		transform: translateX(28px);
 	}
 
-	header nav .theme-button  .toggle {
+	.header__toggle-label {
 		width: 60px;
 		height: 30px;
 	}
@@ -524,26 +523,26 @@ header nav .theme-button .ball {
 		font-size: small;
 	}
 
-	header nav .search-form {
+	.header__search-form {
 		display: none;
 	}
 
-	header nav .theme-button .ball {
+	.header__ball {
 		width: 25px;
 		height: 25px;
 		margin: 3px;
 	}
 	
-	.dark header nav .theme-button .ball {
+	.dark .header__ball {
 		transform: translateX(28px);
 	}
 
-	header nav .theme-button  .toggle {
+	.header__toggle-label {
 		width: 60px;
 		height: 30px;
 	}
 
-	header nav .theme-button  .icon {
+	.header__icon {
 		font-size: small;
 	}
 
