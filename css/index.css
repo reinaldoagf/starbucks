@@ -111,7 +111,7 @@ header {
 	text-transform: uppercase;
 }
 
-.header__sidebar-button {
+.header__theme-button {
 	flex: 2;
 	display: flex;
 	justify-content: flex-end;
@@ -235,7 +235,7 @@ header {
 }
 
 .dark .header__nav-links a,
-.dark .header__sidebar-button span,
+.dark .header__theme-button span,
 .dark .main__header__text p {
 	color: #fff;
 }
